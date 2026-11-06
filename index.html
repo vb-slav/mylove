@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#f4efe7">
+  <meta name="description" content="Три года нашей истории — и целая жизнь впереди.">
+  <title>Наша история · 3 года</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <div class="floating-petals" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <main class="app-shell">
+    <section class="screen screen-intro is-active" id="intro" aria-labelledby="intro-title">
+      <div class="topline"><span class="topline-mark">✳</span><span>НАША ИСТОРИЯ</span><span class="topline-year">ГЛАВА III</span></div>
+      <div class="intro-card paper-card">
+        <div class="eyebrow"><span class="eyebrow-line"></span>ТРИ ГОДА ВМЕСТЕ<span class="eyebrow-line"></span></div>
+        <div class="small-heart" aria-hidden="true">♥</div>
+        <h1 id="intro-title">Дорогая<br><em>жина!</em></h1>
+        <div class="letter-copy">
+          <p>Ровно три года назад мы стали не просто близкими, а по-настоящему родными людьми. В тот день нас объявили мужем и женой.</p>
+          <p>Всего за три года мы с тобой прошли через многое. На нашем пути встречались даже самые сложные испытания, но вместе мы смогли преодолеть их.</p>
+          <p>Я ни капли не жалею, что в тот промозглый и ветреный день, когда моё сердце буквально выпрыгивало из груди, я выбрал тебя. Ту самую, единственную и неповторимую половинку, которой я готов отдать всего себя. Ту, чьи душа и мысли мне так близки. Ту самую красивую, хрупкую, нежную и иногда ворчливую девушку, которую я буду любить всегда...</p>
+        </div>
+        <div class="letter-sign">Всегда твой <span>♥</span></div>
+      </div>
+      <div class="question-block">
+        <p class="question-kicker">И у меня есть один очень важный вопрос</p>
+        <h2>Ты выйдешь за меня<br><em>вновь?</em></h2>
+        <div class="choice-row">
+          <button class="button button-primary" id="yes-button" type="button">Да <span aria-hidden="true">♥</span></button>
+          <button class="button button-quiet" id="no-button" type="button">Нет</button>
+        </div>
+      </div>
+      <div class="page-foot"><span>СДЕЛАНО С ЛЮБОВЬЮ</span><span>01 / 03</span></div>
+    </section>
+
+    <section class="screen screen-yes" id="yes-page" aria-labelledby="yes-title" hidden>
+      <div class="topline"><button class="text-back" type="button" data-go="intro">← Назад</button><span class="topline-mark">✳</span><span class="topline-year">НАВСЕГДА</span></div>
+      <div class="celebration-head">
+        <div class="eyebrow"><span class="eyebrow-line"></span>ЭТО САМОЕ ПРАВИЛЬНОЕ «ДА»<span class="eyebrow-line"></span></div>
+        <h1 id="yes-title">Урааааааааааааааааааа!</h1>
+        <p class="celebration-subtitle">Тогда продолжаем нашу историю.</p>
+      </div>
+      <div class="memory-frame has-image" id="memory-frame">
+        <img id="memory-image" src="./assets/our-photo.jpg" alt="Наша свадебная фотография" decoding="async" />
+        <div class="memory-placeholder" id="memory-placeholder">
+          <div class="placeholder-sparkle">✳</div>
+          <div class="placeholder-camera">▧</div>
+          <span>ЗДЕСЬ БУДЕТ НАШ МОМЕНТ</span>
+          <small>Наша фотография или любимая GIF</small>
+        </div>
+        <span class="photo-caption">мы — это ♥</span>
+      </div>
+      <div class="music-bar" id="music-bar">
+        <span class="music-icon" aria-hidden="true">♫</span>
+        <div class="music-copy"><strong>Наша песня</strong><small id="music-status" aria-live="polite">Tony Tonite — «Бомба»</small></div>
+        <button class="music-toggle" id="music-toggle" type="button" aria-label="Включить музыку" disabled>▶</button>
+      </div>
+      <audio id="our-song" src="./assets/our-song.mp3" preload="auto" playsinline></audio>
+      <div class="future-copy">
+        <p>Впереди нас ждёт ещё много приключений, интересной и классной жизни, взросление нашей маленькой принцессы, переезды, покупки, отдых, ремонты :)</p>
+        <p>Но что бы ни случилось, я буду всегда с тобой рядом. Рядом с нашей малышкой.</p>
+        <p class="love-line">Я люблю тебя всем сердцем!<br>Я очень счастлив, что ты моя половинка!</p>
+      </div>
+      <button class="button button-primary gift-cta" id="gift-button" type="button">Выбрать подарок <span aria-hidden="true">→</span></button>
+      <div class="page-foot"><span>И ЭТО ТОЛЬКО НАЧАЛО</span><span>02 / 03</span></div>
+    </section>
+
+    <section class="screen screen-gifts" id="gifts-page" aria-labelledby="gifts-title" hidden>
+      <div class="topline"><button class="text-back" type="button" data-go="yes-page">← Назад</button><span class="topline-mark">✳</span><span class="topline-year">ДЛЯ ТЕБЯ</span></div>
+      <div class="gift-heading">
+        <div class="eyebrow"><span class="eyebrow-line"></span>НЕ ПРОСТО ОБЕЩАНИЯ<span class="eyebrow-line"></span></div>
+        <h1 id="gifts-title">Твои <em>подарки</em></h1>
+        <p>Выбирай любой купон — каждый из них можно обменять на маленькое или большое счастье.</p>
+      </div>
+      <div class="coupon-grid">
+        <button class="coupon coupon-featured" type="button" data-coupon="ring">
+          <span class="coupon-number">01 · ОСОБЕННЫЙ</span><span class="coupon-icon">◇</span>
+          <span class="coupon-title">Любое кольцо,<br>которое пожелаешь</span>
+          <span class="coupon-bottom"><span>БЕЗ ОГРАНИЧЕНИЙ</span><span>ОТКРЫТЬ ↗</span></span>
+        </button>
+        <button class="coupon" type="button" data-coupon="date">
+          <span class="coupon-number">02 · ВПЕЧАТЛЕНИЯ</span><span class="coupon-icon">✦</span>
+          <span class="coupon-title">Свидание-сюрприз</span>
+          <span class="coupon-bottom"><span>ТОЛЬКО МЫ ДВОЕ</span><span>ОТКРЫТЬ ↗</span></span>
+        </button>
+        <button class="coupon" type="button" data-coupon="rest">
+          <span class="coupon-number">03 · ЗАБОТА</span><span class="coupon-icon">☾</span>
+          <span class="coupon-title">День полного отдыха</span>
+          <span class="coupon-bottom"><span>ВСЁ НА МНЕ</span><span>ОТКРЫТЬ ↗</span></span>
+        </button>
+        <button class="coupon" type="button" data-coupon="massage">
+          <span class="coupon-number">04 · НЕЖНОСТЬ</span><span class="coupon-icon">♡</span>
+          <span class="coupon-title">Массаж без спешки</span>
+          <span class="coupon-bottom"><span>ПО ТВОИМ ПРАВИЛАМ</span><span>ОТКРЫТЬ ↗</span></span>
+        </button>
+        <button class="coupon" type="button" data-coupon="trip">
+          <span class="coupon-number">05 · ПРИКЛЮЧЕНИЕ</span><span class="coupon-icon">⌁</span>
+          <span class="coupon-title">Маленькое путешествие</span>
+          <span class="coupon-bottom"><span>ВЫБИРАЕШЬ ТЫ</span><span>ОТКРЫТЬ ↗</span></span>
+        </button>
+        <button class="coupon" type="button" data-coupon="wish">
+          <span class="coupon-number">06 · ТВОЁ ЖЕЛАНИЕ</span><span class="coupon-icon">✧</span>
+          <span class="coupon-title">Исполнение одного желания</span>
+          <span class="coupon-bottom"><span>С ЛЮБОВЬЮ</span><span>ОТКРЫТЬ ↗</span></span>
+        </button>
+      </div>
+      <div class="gift-reminder"><span class="reminder-mark">♥</span><span>Выбери купон и нажми «Забираю» — мне придёт письмо с твоим выбором.</span></div>
+      <p class="coupon-note">Купоны бессрочные. Количество объятий не ограничено.</p>
+      <div class="page-foot"><span>ТВОЙ ЛИЧНЫЙ ПОДАРОЧНЫЙ ФОНД</span><span>03 / 03</span></div>
+    </section>
+
+    <section class="screen screen-no" id="no-page" aria-labelledby="no-title" hidden>
+      <div class="topline"><button class="text-back" type="button" data-go="intro">← Назад</button><span class="topline-mark">✳</span><span class="topline-year">ОЙ...</span></div>
+      <div class="no-card paper-card">
+        <div class="sad-face" aria-hidden="true">:(</div>
+        <p class="eyebrow">НЕОЖИДАННЫЙ ПОВОРОТ</p>
+        <h1 id="no-title">Кажется,<br><em>кто-то ошибся</em><br>кнопкой...</h1>
+        <p class="no-copy">Подать на развод онлайн в России можно через портал Госуслуг.</p>
+        <a class="button button-outline" href="https://www.gosuslugi.ru/life/details/registration_of_divorce" target="_blank" rel="noopener noreferrer">Перейти на Госуслуги ↗</a>
+        <p class="no-small">Но я всё ещё надеюсь, что ты передумаешь 🥺</p>
+        <button class="button button-primary retry-button" type="button" data-go="intro">Попробовать ещё раз ♥</button>
+      </div>
+      <div class="page-foot"><span>ЛЮБОВЬ ПОБЕЖДАЕТ</span><span>?</span></div>
+    </section>
+  </main>
+
+  <div class="modal-backdrop" id="coupon-modal" hidden role="presentation">
+    <div class="coupon-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+      <button class="modal-close" id="modal-close" type="button" aria-label="Закрыть">×</button>
+      <div class="modal-sparkle">✳</div>
+      <p class="eyebrow" id="modal-eyebrow">ПОДАРОЧНЫЙ КУПОН</p>
+      <h2 id="modal-title">Твой подарок</h2>
+      <p id="modal-description"></p>
+      <div class="modal-stamp">С ЛЮБОВЬЮ · БЕССРОЧНО</div>
+      <p class="notification-status" id="notification-status" aria-live="polite"></p>
+      <button class="button button-primary modal-accept" id="modal-accept" type="button">Забираю ♥</button>
+      <p class="modal-footnote">После подтверждения выбора я получу письмо.</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
